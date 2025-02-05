@@ -224,10 +224,148 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html>
+    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
 
+    <body>
+        <form action="/register" method="post">
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+        
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้าชื่อ:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">กรุณาเลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                    <input type="radio" id="LGBTQ" name="gender" value="LGBTQ">
+                    <label for="LGBTQ">อื่นๆ</label>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการติดต่อ -->
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">เบอร์โทรศัพท์:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">อีเมล:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+         <!-- ส่วนการยืนยันรหัสผ่าน -->
+         <fieldset>
+            <legend>รหัสผ่าน</legend>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="photo">รหัสผ่าน:</label>
+                    <input type="password" id="password" name="password" required> 
+                    <span class="required-mark">*</span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">ยืนยันรหัสผ่าน:</label>
+                    <input type="password" id="confirm-password" name="confirm_password" required>
+                    <span class="required-mark">*</span>
+                </div>
+            </div>
+        </fieldset>
+        
+            <!-- ส่วนความสนใจ -->
+            <fieldset>
+                <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+        
+                <div class="form-group">
+                    <label>ของหวาน:</label>
+                    <input type="checkbox" id="sport" name="interests" value="sport">
+                    <label for="sport">เค้กสตอเบอร์รี่</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">บานานอฟฟี่</label>
+                    <input type="checkbox" id="art" name="interests" value="art">
+                    <label for="art">ช็อคโกแลตดูไบ</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">ไอศกรีม</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">เค้กวนิลา</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">ถังหูลู่</label>
+                </div>
+            </fieldset>
+
+            <!-- ส่วนยืนยันข้อมูล -->
+            <fieldset>
+                <legend>การยืนยันข้อมูล</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ยืนยันว่าข้อมูลทั้งหมดของท่านเป็นความจริง
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">ยืนยัน</button>
+                    <button type="reset">ลบข้อมูล</button>
+                </div>
+            </fieldset>
+        </form>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab_6](https://github.com/user-attachments/assets/86f1bbb1-982a-46ab-bd8d-285eb270d56d)
+
 
 
 
