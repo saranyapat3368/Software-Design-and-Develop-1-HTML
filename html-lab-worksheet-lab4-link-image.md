@@ -165,10 +165,79 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+</head>
+<body>
+    <nav id="nav">
+        <img src="./images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        
+        <figure>
+            <a href="images/gallery/p2.jpg">
+                <img src="images/products/p2.jpg" alt="product2" width="200"> 
+            </a>
+            <figcaption>
+                <p><strong>เมนูขนม:</strong> เค้กสตอเบอร์รี่</p>
+                <p><strong>ราคา:</strong> กล่องละ 150 บาท</p>
+            </figcaption>
+        </figure>
+        
+        <hr>
+        
+        <figure>
+            <a href="images/gallery/p3.jpg">
+                <img src="images/products/p3.jpg" alt="product3" width="200"> 
+            </a>
+            <figcaption>
+                <p><strong>เมนูขนม:</strong> บานานอฟฟี่</p>
+                <p><strong>ราคา:</strong> กล่องละ 125 บาท</p>
+            </figcaption>
+        </figure>
+        
+        <figure>
+            <a href="images/gallery/p4.jpg">
+                <img src="images/products/p4.jpg" alt="product4" width="200"> 
+            </a>
+            <figcaption>
+                <p><strong>เมนูขนม:</strong> พุดดิ้ง</p>
+                <p><strong>ราคา:</strong> ชิ้นละ 65 บาท</p>
+            </figcaption>
+        </figure>
+        
+        <figure>
+            <a href="images/gallery/p5.jpg">
+                <img src="images/products/p5.jpg" alt="product5" width="200"> 
+            </a>
+            <figcaption>
+                <p><strong>เมนูขนม:</strong> ช็อคโกแลตดูไบ</p>
+                <p><strong>ราคา:</strong> ชิ้นละ 85 บาท</p>
+            </figcaption>
+        </figure>
+        
+        <hr>
+    </section>
+    
+    
+    <a href="#nav">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![4 11](https://github.com/user-attachments/assets/f4e840b8-a9e3-4203-9cb1-1f34402147b6)
+![4 1222](https://github.com/user-attachments/assets/4b23cb3c-f199-4f39-af07-09d3b9d9513f)
+
+
 
 
 
